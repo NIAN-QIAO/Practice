@@ -85,3 +85,4 @@ int main()
     int target = 1;
     searchRange(nums, target);
 }
+/*总感觉没有吃透，右边界和左边界独立逼近没有想明白*/
