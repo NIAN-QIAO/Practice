@@ -55,3 +55,5 @@ int main()
     backNumber = search(nums, target);
     cout << backNumber;
 }
+
+/*二分查找，注意区间是闭区间还是开区间，影响接下来的操作*/
