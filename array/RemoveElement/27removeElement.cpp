@@ -1,4 +1,5 @@
 /*快慢指针*/
+/*删除数组中的的指定值，返回数组长度*/
 #include <iostream>
 #include <vector>
 using namespace std;
