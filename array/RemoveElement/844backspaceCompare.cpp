@@ -26,7 +26,7 @@ bool backspaceCompare(string s, string t)
         }
         while (j >= 0)
         {
-            if (s[j] == '#')
+            if (t[j] == '#')
                 tSkipNum++;
             else
             {
@@ -52,5 +52,5 @@ int main()
 {
     string s = "ab##";
     string t = "c#d#";
-    backspaceCompare(s, t);
+    cout << backspaceCompare(s, t);
 }
