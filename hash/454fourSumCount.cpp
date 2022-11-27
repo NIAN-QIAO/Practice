@@ -37,14 +37,14 @@ public:
                 res += hashTable2[0 - iter->first] * iter->second;
             }
         }
-        // for (auto it : hashTable1)
-        // {
-        //     // cout << typeid(it).name() << endl;
-        //     if (hashTable2.count(0 - it.first))
-        //     {
-        //         res += hashTable2[0 - it.first] * it.second;
-        //     }
-        // }
+        for (auto it : hashTable1)
+        {
+            // cout << typeid(it).name() << endl;
+            if (hashTable2.count(0 - it.first))
+            {
+                res += hashTable2[0 - it.first] * it.second;
+            }
+        }
         return res;
     }
 };
