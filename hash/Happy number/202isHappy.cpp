@@ -24,7 +24,7 @@ public:
         unordered_set<int> set;
         while (true)
         {
-            sum = getsum(n);
+            sum = getSum(n);
             if (sum == 1)
                 return true;
             if (set.find(sum) != set.end())
