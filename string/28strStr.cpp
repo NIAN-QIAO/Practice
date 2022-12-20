@@ -34,6 +34,7 @@ public:
             }
             // 4.更新
             next[i] = j;
+            cout << "next[" << i << "]:" << j << endl;
         }
     }
     int strStr(string haystack, string needle)
@@ -41,7 +42,8 @@ public:
         // 1.构建前缀表
         if (needle.size() == 0)
             return 0;
-        int next[needle.size()];
+        // int next[needle.size()];
+        int *next = new int[needle.size()];
         getstr(next, needle);
         // 比对
         int j = 0;
@@ -60,6 +62,12 @@ public:
                 return (i - needle.size() + 1);
             }
         }
+        delete[] next;
         return -1;
     }
 };
+int main()
+{
+    Solution a;
+    string s = "abaabcaba";
+}
